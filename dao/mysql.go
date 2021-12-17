@@ -37,11 +37,11 @@ func InitMySQL() (err error) {
 	sysType := runtime.GOOS
 	var pass string
 	if sysType == "linux" {
-		pass = "161702Hh"
+		pass = "123456"
 	}
 
 	if sysType == "windows" {
-		pass = "161702"
+		pass = "123456"
 	}
 	dsn := "root:" + pass + "@tcp(127.0.0.1:3306)/buuble?charset=utf8mb4&parseTime=True&loc=Local"
 
